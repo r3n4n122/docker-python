@@ -1,0 +1,9 @@
+services:
+  web:
+    image: pinpao
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    command: python hello.py
